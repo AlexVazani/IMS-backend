@@ -3,8 +3,10 @@ import User from "../models/User.js";
 import fs from "fs";
 
 export const getUsers = async (req, res) => {
+  console.log("준비됨");
   try {
     const saveUserDocument = async () => {
+      console.log("실행됨");
       const userDocument = {
         userId: "vazani",
         userPassword:
