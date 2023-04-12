@@ -9,6 +9,8 @@ import cookieParser from "cookie-parser";
 
 import apiRoutes from "./routes/index.js";
 
+import User from "./models/User.js";
+
 /* CONFIGURATION */
 dotenv.config();
 const app = express();
