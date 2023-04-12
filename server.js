@@ -18,13 +18,14 @@ app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 app.use(morgan("common"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(
-  cors({
-    origin: process.env.CLIENT_ORIGIN_URL,
-    credentials: true,
-    optionsSuccessStatus: 200,
-  })
-);
+// app.use(
+//   cors({
+//     origin: process.env.CLIENT_ORIGIN_URL,
+//     credentials: true,
+//     optionsSuccessStatus: 200,
+//   })
+// );
+app.use(cors());
 app.use(cookieParser());
 
 app.use("/uploads", express.static("uploads"));
