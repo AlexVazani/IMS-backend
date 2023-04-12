@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(
   cors({
-    origin: "https://aquamarine-bienenstitch-1c6042.netlify.app",
+    origin: "https://sunny-raindrop-2408a6.netlify.app/",
     credentials: true,
     optionsSuccessStatus: 200,
   })
