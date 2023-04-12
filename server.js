@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(
   cors({
-    origin: "https://web-ims-frontend-416cq2mlgcprh8e.sel3.cloudtype.app",
+    origin: "https://aquamarine-bienenstitch-1c6042.netlify.app",
     credentials: true,
     optionsSuccessStatus: 200,
   })
